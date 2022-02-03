@@ -1,0 +1,21 @@
+Hi, my name is bryan and I will be presenting my analysis of loan approvals and creating a predictive model for loans.
+
+In my analysis, I asked four questions about what traits of a customer influences their approval rate.
+
+Presentation: https://docs.google.com/presentation/d/13eBdU-qgDshHOYHUK4WL1K6FE0PcVkG3heqopA4uV0o/edit?usp=sharing
+
+I examined the applicant's income, their dependents, gender, and education.
+
+When looking at an applicant's income, I found that approved applicants had a lower mean income than rejected applicants. This could be explained by looking at loan size vs approvals. It's possible that smaller loans are more favorable, so lower income customers with smaller loans get approved more.
+
+Lookin at approval rating in relation to how many dependents a customer has, there wasn't any discernable trend to be found regarding their approval rate. While having 2 dependents has a slightly higher approval rate, I could not find an explanation for why this is.
+
+Next, I looked at approvals based on gender. Here, I found that men had a slightly higher approval ratiing at 69.1%, while women are slightly lower at 64.4%. There are different possible reasons for this. It could be that men have jobs that are more desirable for banks to loan to, or they more often have higher education. It is also possible that gender bias is present, with men being more favored than women. 
+
+Finally, I looked at education. Education had the largest discrepancy in all the areas I looked at, with graduate customers being approved 70.7% of the time and non-graduate customers being approved 59.5% of the time.
+
+With this information in mind, I have trained a random forest classifier to classify future customers. It has an accuracy of 86.5% classifying loan approvals.
+This classifier will be available shortly using Amazon AWS.
+
+As for future improvements, more data could be included to improve model accuracy, and more training into the AWS environment to improve efficiency at deploying to the cloud. 
+That's all from me. 
